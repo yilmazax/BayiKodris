@@ -1,0 +1,11 @@
+version: '2'
+services:
+  bayikodris-postgresql:
+    image: postgres:12.1
+    # volumes:
+    #     - ~/volumes/jhipster/BayiKodris/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=BayiKodris
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
